@@ -1,0 +1,31 @@
+{
+  "name": "restorator",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "REST",
+    "Express",
+    "REST decorator",
+    "Dependency Injection"
+  ],
+  "author": "Matthew Borders",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.5",
+    "@types/express": "^4.0.37",
+    "tsc": "^1.20150623.0",
+    "tslint": "^5.7.0",
+    "typescript": "^2.4.2"
+  }
+}
