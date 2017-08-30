@@ -10,15 +10,11 @@ export class HttpContainer {
     const controllers: HttpController[] = Controllers;
     const decorators: IHttpMethod[] = HttpMethods;
 
-    for (let i in decorators) {
-      const decorator: IHttpMethod = decorators[i];
-      
-      for (let j in controllers) {
-        const controller: HttpController = controllers[j];
-
+    decorators.forEach((decorator) => {
+      controllers.forEach((controller) => {
         if (controller.targetClass === decorator.targetClass) {
           const path = `${controller.path}${decorator.path}`;
-          console.log(`${decorator.method} ${path}`);
+          console.log(`[Restorator] Registered ${decorator.method} ${path}`);
 
           switch (decorator.method) {
             case 'GET':
@@ -35,7 +31,7 @@ export class HttpContainer {
               break;
           }
         }
-      }
-    }
+      });
+    });
   }
 }
