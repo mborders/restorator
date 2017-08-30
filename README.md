@@ -1,7 +1,7 @@
 # Restorator
 
 ## Description
-The purpose of this project is to provide a simplistic set of decorators for Express-based REST applications.
+REST controller/route and dependency injection decorators for Express-based REST applications
 
 ## Usage
 ### @Controller (type: any, path: string)
