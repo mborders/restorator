@@ -1,6 +1,6 @@
 {
   "name": "restorator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,6 +17,10 @@
   ],
   "author": "Matthew Borders",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mborders/restorator"
+  },
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4"
